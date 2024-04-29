@@ -11,7 +11,7 @@ class PieceTest {
 	@Test
 	void testPeice_whenCreateAPeace_ShouldReturnANullPositionAndABoard() {
 		// Given / Arrange
-		Board board = new Board();
+		Board board = new Board(8, 8);
 		
 		// When / Act
 		Piece piece = new Piece(board);
