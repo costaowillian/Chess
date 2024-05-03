@@ -18,6 +18,7 @@ public class Application {
 		ChessMatch chessMatch = new ChessMatch();
 		List<ChessPiece> captured = new ArrayList<>();
 		
+		
 		while (!chessMatch.getCheckMate()) {
 			try {
 				UI.clearScreen();
