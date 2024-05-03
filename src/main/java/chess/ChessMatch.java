@@ -55,15 +55,6 @@ public class ChessMatch {
 				mat[i][j] = (ChessPiece) board.piece(i, j);
 			}
 		}
-		
-		check = (testCheck(opponent(currentPlayer))) ? true : false;
-
-		if (testCheckMate(opponent(currentPlayer))) {
-			checkMate = true;
-		}
-		else {
-			nextTurn();
-		}
 		return mat;
 	}
 	
@@ -86,8 +77,14 @@ public class ChessMatch {
 		}
 		
 		check = (testCheck(opponent(currentPlayer))) ? true : false;
+
+		if (testCheckMate(opponent(currentPlayer))) {
+			checkMate = true;
+		}
+		else {
+			nextTurn();
+		}
 		
-		nextTurn();
 		return (ChessPiece)capturedPiece;
 	}
 	

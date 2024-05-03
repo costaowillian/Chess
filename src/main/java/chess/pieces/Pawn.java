@@ -19,13 +19,13 @@ public class Pawn extends ChessPiece {
 		
 		if(this.getColor() == Color.WHITE) {
 			position.setValues(position.getRow() - 1, position.getColumn());
-			if(getBoard().positionExists(position) && !getBoard().positionExists(position)) {
+			if(getBoard().positionExists(position) && !getBoard().thereIsAPiece(position)) {
 				mat[position.getRow()][position.getColumn()] = true;
 			}
 			
 			position.setValues(position.getRow() - 2, position.getColumn());
 			Position position2 = new Position(position.getRow() - 1, position.getColumn());
-			if(getBoard().positionExists(position) && !getBoard().positionExists(position) && getBoard().positionExists(position2) && !getBoard().positionExists(position2) && this.getMoveCount() == 0) {
+			if(getBoard().positionExists(position) && !getBoard().thereIsAPiece(position) && getBoard().positionExists(position2) && !getBoard().thereIsAPiece(position2) && this.getMoveCount() == 0) {
 				mat[position.getRow()][position.getColumn()] = true;
 			}
 			
@@ -41,13 +41,13 @@ public class Pawn extends ChessPiece {
 		} 
 		else {
 			position.setValues(position.getRow() + 1, position.getColumn());
-			if(getBoard().positionExists(position) && !getBoard().positionExists(position)) {
+			if(getBoard().positionExists(position) && !getBoard().thereIsAPiece(position)) {
 				mat[position.getRow()][position.getColumn()] = true;
 			}
 			
 			position.setValues(position.getRow() + 2, position.getColumn());
 			Position position2 = new Position(position.getRow() + 1, position.getColumn());
-			if(getBoard().positionExists(position) && !getBoard().positionExists(position) && getBoard().positionExists(position2) && !getBoard().positionExists(position2) && this.getMoveCount() == 0) {
+			if(getBoard().positionExists(position) && !getBoard().thereIsAPiece(position) && getBoard().positionExists(position2) && !getBoard().thereIsAPiece(position2) && this.getMoveCount() == 0) {
 				mat[position.getRow()][position.getColumn()] = true;
 			}
 			
