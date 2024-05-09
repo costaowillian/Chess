@@ -6,7 +6,7 @@ O projeto consiste em um aplicativo executado no terminal de um jogo de xadrez.
 
 Certifique-se de ter o seguinte instalado antes de começar:
 
-- [Java JDK]([https://nodejs.org/](https://www.oracle.com/br/java/technologies/downloads/)): O ambiente de desenvolvimento Java.
+- [Java JDK](https://www.oracle.com/br/java/technologies/downloads/): O ambiente de desenvolvimento Java.
 
 ## Tecnologias Utilizadas
 
